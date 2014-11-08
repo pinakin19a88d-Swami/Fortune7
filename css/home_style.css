@@ -380,3 +380,27 @@ ul {
 	background: #cccccc;
 }
 /* Ends Slider code */
+
+/* Starts Footer Code */
+.footerWrap {
+	background-color: #333333;
+}
+.footerWrap ul {
+	list-style: none;
+	float: left;
+	margin: 25px 37px 25px 33px;
+}
+.footerWrap ul li a,
+.footerWrap p {
+	color: #666666;
+	font-size: 13px;
+}
+.footerWrap ul li a {
+	line-height: 27px;
+}
+.footerWrap p {
+	line-height: 20px;
+	float: left;
+	margin: 25px 50px;
+}
+/* Ends Footer Code */
