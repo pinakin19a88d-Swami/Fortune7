@@ -90,6 +90,14 @@
 					        <!-- Slide 1 -->
 					        <div class="sp-slide">
 					            <img class="sp-image" src="images/carousel/home_banner.jpg"/>
+					            <h1 class="sp-layer"
+					            	data-position="centerRight"
+					            	data-show-transition="left"
+									data-show-duration="500"
+									data-show-delay="1000"
+									data-hide-transition="right"
+									data-hide-duration="200"
+									data-hide-delay="500">THE WINNING EDGE,<br/>EVERYTIME....</h1>
 					        </div>
 
 					        <!-- Slide 2 -->
@@ -156,12 +164,15 @@
 					width: 940,
 				    height: 434,
 				    arrows: true,
-				    buttons: true,
+				    buttons:false,
+				    loop:true,
+				    fade:true,
+				    slideAnimationDuration:500,
 				    waitForLayers: true,
-				    fade: true,
 				    autoplay: true,
-				    autoScaleLayers: false
+				    autoplayOnHover: 'pause',
 				});
+			});
 		</script>
 	</body>
 

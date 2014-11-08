@@ -307,7 +307,23 @@ ul {
 	font-weight: 200;
 	letter-spacing: 3px;
 	top: 200px;
-	right: 5px;
+	right: 20px!important;
+}
+.sp-horizontal .sp-previous-arrow {
+	width: 43px;
+	height: 43px;
+	background: url("../images/slider_arrow_left.png") no-repeat;
+	left: -41px;
+}
+.sp-horizontal .sp-next-arrow {
+	width: 43px;
+	height: 43px;
+	background: url("../images/slider_arrow_right.png") no-repeat;
+	right: -41px;
+}
+.sp-previous-arrow:before,
+.sp-next-arrow:before {
+	content: '';
 }
 
 .subNav {
