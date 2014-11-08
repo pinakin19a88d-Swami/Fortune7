@@ -239,7 +239,7 @@ body {
 .container {
 	/*margin: 0 auto;*/
 }
-.navbar-inner {
+.header .navbar-inner {
 	min-height: 98px
 }
 .mainNav nav li a {
@@ -255,6 +255,7 @@ body {
 }
 .navbar-inner {
 	background: none;
+	background: #ffffff!important;
 	-webkit-box-shadow: none;
 			box-shadow: none;
 	-webkit-border-radius: 0;
@@ -326,16 +327,39 @@ ul {
 	content: '';
 }
 
-.subNav {
+/*.subNav {
 	height: 45px;
 	margin-bottom: 0;
+	background-color: #ede7c3!important;
+}*/
+.subNavList {
+	list-style-type: none;
 	background-color: #ede7c3;
+	padding-left: 8px;
 }
-.subNav .subNavList {
-	margin-top: 4px;
+.subNavList li {
+	float: left;
+	padding: 16px 0 16px 22px;
 }
-.subNav .subNavList > li > a {
+.subNavList > li > a {
 	color: #333333;
+	font-size: 11px;
+	line-height: 13px;
+	margin-right: 22px;
+	float: left;
+	letter-spacing: 1px;
+}
+.subNavList > li > span {
+	display: inline-block;
+	float: left;
+	width: 2px;
+	height: 8px;
+	background: #767465;
+	margin-top: 3px;
+} 
+.subNavList > li > a:hover, .subNavList > li.active > a {
+	color: #cc0000;
+	text-decoration: none;
 }
 .pageContent {
 	background-color: #f3f3f3;
@@ -348,7 +372,7 @@ ul {
 	margin-bottom: 8px;
 }
 .pageContent p {
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 19px;
 }
 /* Start Slider code */
