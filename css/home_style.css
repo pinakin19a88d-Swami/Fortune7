@@ -216,7 +216,9 @@ a {
 /* ---------- Animation Delays Section End ---------- */
 
 /* Text Classes Start */
-
+ul {
+	list-style-type: none;
+}
 .redText {
 	color: #cc0000;
 }
@@ -341,9 +343,13 @@ ul {
 	background: #767465;
 	margin-top: 3px;
 } 
-.subNavList > li > a:hover, .subNavList > li.active > a {
+.subNavList > li > a:hover, 
+.subNavList > li.active > a {
 	color: #cc0000;
 	text-decoration: none;
+}
+.contentWrap .span10{
+	width: 799px!important;
 }
 .pageContent {
 	background-color: #f3f3f3;
@@ -364,3 +370,24 @@ ul {
 	background: #cccccc;
 }
 /* Ends Slider code */
+.rightCol {
+	background: #cccccc;
+}
+.industryTop {
+	margin-bottom: 18px;
+}
+.rightCol li a {
+	display: block;	
+	text-align: center;
+	margin-bottom: 7px;
+}
+.rightCol li a img {
+	margin-bottom: 10px;
+}
+.rightCol li span {
+	color: #990000;
+	font-size:11px;
+	line-height: 13px;
+	display: block;
+
+}
