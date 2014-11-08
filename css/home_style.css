@@ -239,17 +239,19 @@ body {
 .container {
 	/*margin: 0 auto;*/
 }
-
+.navbar-inner {
+	min-height: 98px
+}
 .mainNav nav li a {
 	color: #666666;
 }
 .mainNav .nav {
-	margin: 57px 0 0 0;
+	margin: 45px 0 0 50px;
 }
 .mainNav .brand {
 	width: 150px;
 	padding: 0 0;
-	margin: 36px 0 0 24px;
+	margin: 20px 0 0 45px;
 }
 .navbar-inner {
 	background: none;
