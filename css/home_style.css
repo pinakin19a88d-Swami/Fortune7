@@ -307,13 +307,20 @@ ul {
 
 .pageContent {
 	background-color: #f3f3f3;
+	padding: 39px 33px;
 }
 .pageContent h1 {
 	font-size: 30px;
-	font-weight: 200;
+	line-height: 32px;
+	font-weight: normal;
+	margin-bottom: 8px;
 }
 .pageContent p {
 	font-size: 14px;
-	line-height: 20px;
-	margin: 10px 0 0 0;
+	line-height: 19px;
 }
+/* Start Slider code */
+.sliderWrap {
+	background: #cccccc;
+}
+/* Ends Slider code */
