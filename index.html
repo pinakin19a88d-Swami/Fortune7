@@ -90,6 +90,14 @@
 					        <!-- Slide 1 -->
 					        <div class="sp-slide">
 					            <img class="sp-image" src="images/carousel/home_banner.jpg"/>
+					            <h1 class="sp-layer"
+					            	data-position="centerRight"
+					            	data-show-transition="left"
+									data-show-duration="500"
+									data-show-delay="1000"
+									data-hide-transition="right"
+									data-hide-duration="200"
+									data-hide-delay="500">THE WINNING EDGE,<br/>EVERYTIME....</h1>
 					        </div>
 
 					        <!-- Slide 2 -->
@@ -158,11 +166,31 @@
 						</ul>
 					</div><!-- rightCol -->
 						
-					</div><!-- row -->
-				</div><!-- container -->			
+				</div><!-- row -->
+			</div><!-- container -->			
 		</section><!-- contentWrap -->
+			
+	
+		<section class="footerWrap">
+			<div class="container">
+				<ul class="">
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Services</a></li>
+				</ul>
+
+				<ul class="">
+					<li><a href="">Industry Segments</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+
+				<p>
+					1st Floor, Sahajanand Complex, Next to 1000 Oaks <br/>Restarurant, 2416 East Street, Camp, Pune - 411 001
+					<br/>Tel: 66011512 / 3, Email : rajeev@fortuneps.com
+					<br/>www.fortuneexecativesearch.com
+				</p>
 			</div><!-- container -->
-	<!--	</section> sliderWrap -->
+		</section><!-- footerWrap -->
 	</div><!-- pageWrap ends -->
 		
 		<!-- Javascripts -->
@@ -176,12 +204,15 @@
 					width: 940,
 				    height: 434,
 				    arrows: true,
-				    buttons: true,
+				    buttons:false,
+				    loop:true,
+				    fade:true,
+				    slideAnimationDuration:500,
 				    waitForLayers: true,
-				    fade: true,
 				    autoplay: true,
-				    autoScaleLayers: false
+				    autoplayOnHover: 'pause',
 				});
+			});
 		</script>
 	</body>
 
