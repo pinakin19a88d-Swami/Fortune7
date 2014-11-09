@@ -397,7 +397,7 @@ background: url("../images/industry_bg.png") repeat-y;
 	overflow: hidden;
 }
 .pageContent h1 {
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 32px;
 	font-weight: normal;
 	margin-bottom: 8px;
@@ -413,6 +413,10 @@ background: url("../images/industry_bg.png") repeat-y;
 	line-height: 19px;
 	color: #666666;
 	margin-bottom: 20px;
+}
+.pageContent ul {
+	list-style: disc;
+	margin-left: 15px;
 }
 /* Start Slider code */
 .sliderWrap {

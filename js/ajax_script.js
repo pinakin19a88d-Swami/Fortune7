@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("a").click(function() {
 
 		$(".mainNav .nav li").removeClass("active");
-		$(".aboutUsAjax li").removeClass("active");
+		$(".subNavList li").removeClass("active");
 		
 		$(this).parent().addClass("active");
 		// $("#aboutUs").parent().removeClass("active");
@@ -24,7 +24,6 @@ $(document).ready(function(){
 			$("#contactUs").addClass("active");	
 		}
 		
-
 		$(".aboutUsAjax").css("display","block");
 
 		var current = $(this).attr("name");
