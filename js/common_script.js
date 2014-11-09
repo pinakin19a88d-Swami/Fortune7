@@ -19,7 +19,7 @@ $(document).ready(function(){
 		window.setTimeout(function() {  
      		$(".aboutUsNav").css("display","none");
 		    },
-		    1000
+		    2000
 		);
 
 	});
@@ -43,7 +43,7 @@ $(document).ready(function(){
 		window.setTimeout(function() {  
      		$(".servicesNav").css("display","none");
 		    },
-		    1000
+		    2000
 		);
 
 	});
@@ -67,7 +67,7 @@ $(document).ready(function(){
 		window.setTimeout(function() {  
      		$(".industryNav").css("display","none");
 		    },
-		    1000
+		    2000
 		);
 
 	});
