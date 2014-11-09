@@ -20,7 +20,8 @@
 		<!-- <link rel="stylesheet" href="css/bootstrap-responsive.css" /> -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
-		<link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" /> -->
+		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="css/home_style.css" />
 
 		<!--[if lte IE 8]>
@@ -48,7 +49,7 @@
 				    		<div class="span7">
 					    		<ul class="nav">
 									<li class="active"><a href="#">Home</a></li>
-									<li>
+									<li id="aboutUs">
 										<a href="#">About Us</a>
 										<ul class="aboutUsNav">
 											<li class="active"><a href="#">Company</a></li>
@@ -58,7 +59,7 @@
 											<li><a href="#">Promoters</a></li>
 									    </ul>
 									</li>
-									<li>
+									<li id="services">
 										<a href="#">Services</a>
 										<ul class="servicesNav">
 											<li class="active"><a href="#">Executive Search</a></li>
@@ -66,9 +67,9 @@
 											<li><a href="#">Training</a></li>
 									    </ul>
 									</li>
-									<li>
+									<li id="industry">
 										<a href="#">Industry Segments</a>
-										<ul class="servicesNav">
+										<ul class="industryNav">
 											<li class="active"><a href="#">Industry Segments We Cater</a></li>
 											<li><a href="#">Post Your Requirement</a></li>
 									    </ul>
@@ -84,34 +85,20 @@
 		<section class="sliderWrap">
 			<div class="container">
 
-				<div class="banner">
-					<div class="slider-pro" id="my-slider">
-					    <div class="sp-slides">
-					        <!-- Slide 1 -->
-					        <div class="sp-slide">
-					            <img class="sp-image" src="images/carousel/home_banner.jpg"/>
-					            <h1 class="sp-layer"
-					            	data-position="centerRight"
-					            	data-show-transition="left"
-									data-show-duration="500"
-									data-show-delay="1000"
-									data-hide-transition="right"
-									data-hide-duration="200"
-									data-hide-delay="500">THE WINNING EDGE,<br/>EVERYTIME....</h1>
-					        </div>
-
-					        <!-- Slide 2 -->
-					        <div class="sp-slide">
-					            <img class="sp-image" src="images/carousel/banner_image_1.jpg"/>
-					        </div>
-
-					        <!-- Slide 3 -->
-					        <div class="sp-slide">
-					            <img class="sp-image" src="images/carousel/banner_image_2.jpg"/>
-					        </div>
-					    </div>
+				
+					
+					<div id="slider" class="nivoSlider">
+					    <img src="images/carousel/home_banner.jpg" alt="" />
+					    <img src="images/carousel/banner_image_1.jpg" alt="" />
+					    <img src="images/carousel/banner_image_2.jpg" alt="" />
+					    <img src="images/carousel/banner_image_3.jpg" alt="" />
+					    <img src="images/carousel/banner_image_4.jpg" alt="" />
+					    <img src="images/carousel/banner_image_5.jpg" alt="" />
+					    <img src="images/carousel/banner_image_6.jpg" alt="" />
+					    <img src="images/carousel/banner_image_7.jpg" alt="" />
 					</div>
-				</div><!-- banner -->
+
+				
 			</div><!-- container starts -->
 		</section><!-- Sliderwrap starts -->
 
@@ -221,22 +208,24 @@
 		
 		<!-- Javascripts -->
 		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-		<script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<!-- <script type="text/javascript" src="js/jquery.sliderPro.min.js"></script> -->
+		
+		<!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+		<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript" src="js/common_script.js"></script>
 
 		<script type="text/javascript">
-			$(document).ready(function(){
-				$('#my-slider').sliderPro({
-					width: 940,
-				    height: 434,
-				    arrows: true,
-				    buttons:false,
-				    loop:true,
-				    fade:true,
-				    slideAnimationDuration:500,
-				    waitForLayers: true,
-				    autoplay: true,
-				    autoplayOnHover: 'pause',
+			$(window).load(function() {
+			    $('#slider').nivoSlider({
+				    effect: 'random',            // Specify sets like: 'fold,fade,sliceDown'
+				    slices: 15,                     // For slice animations
+				    boxCols: 8,                     // For box animations
+				    boxRows: 4,                     // For box animations
+				    animSpeed: 500,                 // Slide transition speed
+				    pauseTime: 3000,                // How long each slide will show
+				    startSlide: 0,                  // Set starting Slide (0 index)
+				    directionNav: true,             // Specify sets like: 'fold,fade,sliceDown'
+				    controlNav: false,               // 1,2,3... navigation
 				});
 			});
 		</script>
