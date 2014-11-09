@@ -463,8 +463,10 @@ background: url("../images/industry_bg.png") repeat-y;
 	width: 340px;
 
 }
-.cuSection .contactDetails h4 a {
+.cuSection .contactDetails a {
 	color: #000;
+	font-size: 16px;
+	font-weight: bold;
 }
 .cuSection .mapHeading {
 	position: relative;

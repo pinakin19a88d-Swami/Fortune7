@@ -30,6 +30,12 @@ $(document).ready(function(){
 			$("#contactUs").addClass("active");	
 		}
 
+		if(idName == "currentJob"){
+			$("#currentJob").addClass("active");
+			$(".subNavWrap ul").css("display","none");
+			$(".currentJobAjax").css("display","block");
+		}
+
 		var current = $(this).attr("name");
 		// alert(current);
 		$(".pageContent").html("");
