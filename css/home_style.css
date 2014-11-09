@@ -656,7 +656,18 @@ textarea {
 	border-radius: 0;
 	resize:none;
 	width: 250px;
-
+}
+input[type="submit"],
+input[type="reset"]{
+	font-size: 13px;
+	line-height: 24px;
+	color: #fff;
+	background: url("../images/blackBg.jpg") repeat-x;
+	border: none;
+	font-family: arial;
+	font-weight: normal;
+	margin-right: 10px!important;
+	padding: 1px 10px;
 }
 
 /*Ends forms code*/
