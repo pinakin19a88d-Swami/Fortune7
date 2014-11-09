@@ -418,6 +418,42 @@ background: url("../images/industry_bg.png") repeat-y;
 	list-style: disc;
 	margin-left: 15px;
 }
+.cuSection {
+}
+.cuSection .contactDetails {
+	float: left;
+	width: 340px;
+
+}
+.cuSection .contactDetails h4 a {
+	color: #000;
+}
+.cuSection .mapHeading {
+	position: relative;
+	float: left;
+	width: 161px;
+	height: 31px;
+	background-color: #999999;
+}
+.cuSection .mapHeading {
+	padding: 6px 12px;
+}
+.cuSection .mapHeading .mapBG {
+	position: absolute;
+	width: 27px;
+	height: 31px;
+	top: 0px;
+	right: -27px;
+	background: url("../images/map-heading-bg.png") no-repeat;
+}
+.cuSection .locationMap {
+	float: left;
+	width: 380px;
+	height: 266px;
+	background-color: #cccccc;
+	/*border: 2px solid #000;*/
+}
+
 /* Start Slider code */
 .sliderWrap {
 	background: #cccccc;
