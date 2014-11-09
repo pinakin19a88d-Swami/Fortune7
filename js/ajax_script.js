@@ -1,16 +1,19 @@
 $(document).ready(function(){
 
-	$(".aboutUsAjax li a, .aboutUsNav li a, #aboutUs").click(function() {
+	$("#aboutUs, a").click(function() {
 
-		// $(".subMenu li a").removeClass("active");
-		// $(".services span").removeClass("active");
-		// $(this).addClass("active");
+		$(".mainNav .nav li").removeClass("active");
+		$(".aboutUsAjax li").removeClass("active");
+		
+		$(this).parent().addClass("active");
+		// $("#aboutUs").parent().removeClass("active");
+		$("#aboutUs").addClass("active");
 
 		$(".aboutUsAjax").css("display","block");
 
 		var current = $(this).attr("name");
+		// alert(current);
 		$(".pageContent").html("");
-		// $(".pageContent").load("ajax/cssLoader.html");
 		$(".pageContent").load(current);
 
 	});
