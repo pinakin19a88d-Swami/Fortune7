@@ -244,8 +244,8 @@ body {
 .header .navbar-inner {
 	min-height: 98px
 }
-.mainNav nav li a {
-	color: #666666;
+.mainNav .nav > li {
+	height: 53px;
 }
 .mainNav .nav {
 	margin: 45px 0 0 50px;
@@ -274,23 +274,45 @@ ul {
 			box-shadow: none;
 	color: #cc0000;
 }
+#aboutUs,
+#services,
+#industry {
+	/*position: relative;*/
+
+}
 .aboutUsNav,
-.servicesNav {
+.servicesNav,
+.industryNav {
 	position: absolute;
 	list-style: none;
 	opacity: 0.8;
 	background-color: #787878;
 	color: #fff;
-	margin: 10px;
 	padding: 5px 15px;
 	z-index: 99;
+
+	margin: -10px 0;
+	opacity: 0;
+	display: none;
+
+	-webkit-transition: all 0.25s ease;
+	   -moz-transition: all 0.25s ease;
+		 -o-transition: all 0.25s ease;
+			transition: all 0.25s ease;
 }
 .aboutUsNav a,
-.servicesNav a {
+.servicesNav a,
+.industryNav a {
 	color: #fff;
 	line-height: 24px;
 }
-
+#aboutUs:hover, 
+#services:hover, 
+#industry:hover {
+	background: url("../images/nav_active_icon.png") no-repeat;
+	background-size: 25px 25px;
+	background-position: bottom center;
+}
 .hero-unit {
 	-webkit-border-radius: 0;
 			border-radius: 0;
@@ -301,6 +323,7 @@ ul {
 	padding: 0;
 }
 .banner {
+	position: relative;
 	height: 434px;
 }
 .banner h1 {
@@ -312,28 +335,6 @@ ul {
 	top: 200px;
 	right: 20px!important;
 }
-.sp-horizontal .sp-previous-arrow {
-	width: 43px;
-	height: 43px;
-	background: url("../images/slider_arrow_left.png") no-repeat;
-	left: -41px;
-}
-.sp-horizontal .sp-next-arrow {
-	width: 43px;
-	height: 43px;
-	background: url("../images/slider_arrow_right.png") no-repeat;
-	right: -41px;
-}
-.sp-previous-arrow:before,
-.sp-next-arrow:before {
-	content: '';
-}
-
-/*.subNav {
-	height: 45px;
-	margin-bottom: 0;
-	background-color: #ede7c3!important;
-}*/
 .subNavList {
 	list-style-type: none;
 	background-color: #ede7c3;
@@ -384,6 +385,23 @@ ul {
 /* Start Slider code */
 .sliderWrap {
 	background: #cccccc;
+}
+.nivoSlider {
+	overflow: visible;
+}
+.nivo-directionNav .nivo-prevNav {
+	width: 43px;
+	height: 43px;
+	background: url("../images/slider_arrow_left.png") no-repeat;
+	left: -41px;
+	text-indent: -9999px
+}
+.nivo-directionNav .nivo-nextNav {
+	width: 43px;
+	height: 43px;
+	background: url("../images/slider_arrow_right.png") no-repeat;
+	right: -41px;
+	text-indent: -9999px
 }
 /* Ends Slider code */
 
