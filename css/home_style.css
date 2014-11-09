@@ -335,10 +335,19 @@ ul {
 	top: 200px;
 	right: 20px!important;
 }
+.subNavWrap {
+	position: relative;
+	height: 45px;
+	background-color: #ede7c3;
+}
 .subNavList {
+	position: absolute;
+	top: 0;
+	left: 0;
 	list-style-type: none;
 	background-color: #ede7c3;
 	padding-left: 8px;
+	display: none;
 }
 .subNavList li {
 	float: left;
