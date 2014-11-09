@@ -497,20 +497,20 @@ background: url("../images/industry_bg.png") repeat-y;
 	background: #cccccc;
 }
 .nivoSlider {
-	overflow: visible;
+	/*overflow: visible;*/
 }
 .nivo-directionNav .nivo-prevNav {
 	width: 43px;
 	height: 43px;
 	background: url("../images/slider_arrow_left.png") no-repeat;
-	left: -41px;
+	left: 15px;
 	text-indent: -9999px
 }
 .nivo-directionNav .nivo-nextNav {
 	width: 43px;
 	height: 43px;
 	background: url("../images/slider_arrow_right.png") no-repeat;
-	right: -41px;
+	right: 15px;
 	text-indent: -9999px
 }
 /* Ends Slider code */
