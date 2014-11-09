@@ -367,9 +367,13 @@ ul {
 .contentWrap .span10{
 	width: 799px!important;
 }
+.industryBg{
+background: url("../images/industry_bg.png") repeat-y;
+}
 .pageContent {
 	background-color: #f3f3f3;
 	padding: 39px 33px;
+	min-height: 340px;
 }
 .pageContent h1 {
 	font-size: 30px;
@@ -387,16 +391,20 @@ ul {
 }
 /* Ends Slider code */
 
-.rightCol {
-	background: #cccccc;
-}
 .industryTop {
 	margin-bottom: 18px;
+}
+.rightCol li{
+	padding: 0 25px;
 }
 .rightCol li a {
 	display: block;	
 	text-align: center;
 	margin-bottom: 7px;
+}
+.rightCol li a:hover,
+.rightCol li a:hover span{
+	text-decoration: none;
 }
 .rightCol li a img {
 	margin-bottom: 10px;
@@ -407,11 +415,68 @@ ul {
 	line-height: 13px;
 	display: block;
 }
+.servicesIco{
+	float: left;
+	background: #ede7c3;
+	padding: 20px 35px;
+	width: 799px;
+}
+.servicesIco h6 {
+	float: left;
+	font-size: 16px;
+	font-style: italic;
+	color: #cc0000;
+	font-weight: normal;
+	margin: 20px 33px 0 0;
+}
+.servicesIco ul {
+	overflow: hidden;
+	float: left;
+}
+.servicesIco li {
+	float: left;
+	margin-left: 66px;
+}
+.servicesIco li:first-child{
+	margin-left: 0;
+}
+.servicesIco li a {
+	display: block;
+}
+.servicesIco a i {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	background: url("../images/Fortune_servics_sprite.png") no-repeat 0 0;
+	float: left;
+	margin-right: 20px;
+}
+.servicesIco a i.execSearch{
+	background-position: -2px -1px;
+}
+.servicesIco a i.hrAdvice{
+	background-position: -2px -64px;
+}
+.servicesIco a i.training{
+	background-position: -2px -128px;
+}
+.servicesIco a span {
+	float: left;
+	margin-top: 20px;
+	color: #333333;
+	font-size: 12px;
+	font-weight: normal;
+}
+.servicesIco a:hover span{
 
+}
 
 /* Starts Footer Code */
 .footerWrap {
 	background-color: #333333;
+	-webkit-box-shadow: 0 0 7px rgba(35,31,32,.75); 
+	-moz-box-shadow: 0 0 7px rgba(35,31,32,.75); 
+	box-shadow: 0 0 7px rgba(35,31,32,.75);
 }
 .footerWrap ul {
 	list-style: none;
