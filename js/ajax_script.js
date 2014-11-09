@@ -9,25 +9,33 @@ $(document).ready(function(){
 
 		var idName = $(this).attr('id');
 		if(idName == "home"){
+			$(".subNavWrap ul").css("display","none");
 			$("#home").addClass("active");	
 		}
-		if(idName == "aboutUs"){
+		if((idName == "aboutUs") || (idName == "aboutUsFt")){
 			$("#aboutUs").addClass("active");
 			$(".subNavWrap ul").css("display","none");
 			$(".aboutUsAjax").css("display","block");
 		}
-		if(idName == "services"){
+		if((idName == "services") || (idName == "servicesFt")){
 			$("#services").addClass("active");
 			$(".subNavWrap ul").css("display","none");
 			$(".servicesAjax").css("display","block");
 		}
-		if(idName == "industry"){
+		if((idName == "industry") || (idName == "industryFt")){
 			$("#industry").addClass("active");
 			$(".subNavWrap ul").css("display","none");
 			$(".industryAjax").css("display","block");
 		}
 		if(idName == "contactUs"){
+			$(".subNavWrap ul").css("display","none");
 			$("#contactUs").addClass("active");	
+		}
+
+		if(idName == "currentJob"){
+			$("#currentJob").addClass("active");
+			$(".subNavWrap ul").css("display","none");
+			$(".currentJobAjax").css("display","block");
 		}
 
 		var current = $(this).attr("name");

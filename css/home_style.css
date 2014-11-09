@@ -464,8 +464,13 @@ background: url("../images/industry_bg.png") repeat-y;
 	width: 340px;
 
 }
-.cuSection .contactDetails h4 a {
+.cuSection .contactDetails .email {
+	color: #666666;
+}
+.cuSection .contactDetails .website {
 	color: #000;
+	font-size: 16px;
+	font-weight: bold;
 }
 .cuSection .mapHeading {
 	position: relative;
@@ -491,6 +496,16 @@ background: url("../images/industry_bg.png") repeat-y;
 	height: 266px;
 	background-color: #cccccc;
 	/*border: 2px solid #000;*/
+}
+.website,
+.email {
+	color: #666666;
+	font-weight: bold;
+}
+.website:hover,
+.email:hover {
+	color: #555555;
+	font-weight: bold;
 }
 
 /* Start Slider code */
