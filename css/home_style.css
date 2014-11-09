@@ -225,6 +225,9 @@ ul {
 .lightGreyText {
 	color: #666666;
 }
+.blueTxt {
+	color: #006699;
+}
 .boldItalic {
 	font-weight: bold;
 	font-style: italic;
@@ -391,6 +394,7 @@ background: url("../images/industry_bg.png") repeat-y;
 	background-color: #f3f3f3;
 	padding: 39px 33px;
 	min-height: 340px;
+	overflow: hidden;
 }
 .pageContent h1 {
 	font-size: 30px;
@@ -398,9 +402,17 @@ background: url("../images/industry_bg.png") repeat-y;
 	font-weight: normal;
 	margin-bottom: 8px;
 }
+.pageContent h6 {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
 .pageContent p {
 	font-size: 13px;
 	line-height: 19px;
+	color: #666666;
+	margin-bottom: 20px;
 }
 /* Start Slider code */
 .sliderWrap {
