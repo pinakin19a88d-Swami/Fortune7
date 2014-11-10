@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-	$(".mainNav .nav li").removeClass("active");
-	$(".subNavList li").removeClass("active");
-
-	$(this).parent().addClass("active");
-
 	$("#aboutUs").hover(function(){
 
 		$(".aboutUsNav").css("display","block");

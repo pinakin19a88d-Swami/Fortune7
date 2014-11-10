@@ -2,6 +2,9 @@ $(document).ready(function(){
 
 	$("a, li").click(function() {
 
+		$(".mainNav .nav li").removeClass("active");
+		$(".subNavList li").removeClass("active");
+		
 		$(this).parent().addClass("active");
 
 		var idName = $(this).attr('id');
