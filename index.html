@@ -43,38 +43,70 @@
 				<div class="navbar-inner">
 					<div class="container">
 						<div class="row">
-				  			<div class="span4">
-				    			<a class="brand" href="javascript:void(0);"><img src="images/fortune_logo.png" alt="Fortune Logo"></a>
+				  			<div class="span4" id="companyLogo">
+				    			<a class="brand" href="javascript:void(0);" name="ajax/homepage.html"><img src="images/fortune_logo.png" alt="Fortune Logo"></a>
 				    		</div><!-- span4 -->
 				    		<div class="span7">
+					    		
 					    		<ul class="nav">
-									<li id="home" class="active"><a href="javascript:void(0);">Home</a></li>
+									
+									<li class="active" id="home">
+										<a href="javascript:void(0);" name="ajax/homepage.html">Home</a>
+									</li>
+									
 									<li id="aboutUs">
 										<a href="javascript:void(0);">About Us</a>
-										<ul class="aboutUsNav">
-											<li class="active"><a href="javascript:void(0);" name="ajax/aboutUs-company.html">Company</a></li>
-											<li><a href="javascript:void(0);" name="ajax/aboutUs-vision-mission.html">Vision-Mission</a></li>
-											<li><a href="javascript:void(0);" name="ajax/aboutUs-team.html">Team</a></li>
-											<li><a href="javascript:void(0);" name="ajax/aboutUs-promoters.html">Promoters</a></li>
+										
+										<ul class="aboutUsNav animated">
+											<li class="active" id="abus1">
+												<a href="javascript:void(0);" name="ajax/aboutUs-company.html">Company</a>
+											</li>
+											<li id="abus2">
+												<a href="javascript:void(0);" name="ajax/aboutUs-vision-mission.html">Vision-Mission</a>
+											</li>
+											<li id="abus3">
+												<a href="javascript:void(0);" name="ajax/aboutUs-team.html">Team</a>
+											</li>
+											<li id="abus4">
+												<a href="javascript:void(0);" name="ajax/aboutUs-promoters.html">Promoters</a>
+											</li>
 									    </ul>
+
 									</li>
+									
 									<li id="services">
 										<a href="javascript:void(0);">Services</a>
+										
 										<ul class="servicesNav">
-											<li class="active"><a href="javascript:void(0);" name="ajax/services-executive-search.html">Executive Search</a></li>
-											<li><a href="javascript:void(0);" name="ajax/services-hr-advisory.html">HR Advisory</a></li>
-											<li><a href="javascript:void(0);" name="ajax/services-training.html">Training</a></li>
+											<li class="active" id="serv1">
+												<a href="javascript:void(0);" name="ajax/services-executive-search.html">Executive Search</a>
+											</li>
+											<li id="serv2">
+												<a href="javascript:void(0);" name="ajax/services-hr-advisory.html">HR Advisory</a>
+											</li>
+											<li id="serv3">
+												<a href="javascript:void(0);" name="ajax/services-training.html">Training</a>
+											</li>
 									    </ul>
+
 									</li>
+									
 									<li id="industry">
 										<a href="javascript:void(0);">Industry Segments</a>
+										
 										<ul class="industryNav">
-											<li class="active"><a href="javascript:void(0);" name="ajax/industry-segments-we-cater.html">Industry Segments We Cater</a></li>
-											<li><a href="javascript:void(0);" name="ajax/industry-post-requirment.html">Post Your Requirement</a></li>
+											<li class="active" id="indu1">
+												<a href="javascript:void(0);" name="ajax/industry-segments-we-cater.html">Industry Segments We Cater</a>
+											</li>
+											<li id="indu2">
+												<a href="javascript:void(0);" name="ajax/industry-post-requirment.php">Post Your Requirement</a>
+											</li>
 									    </ul>
+
 									</li>
 									<li id="contactUs"><a href="javascript:void(0);" name="ajax/contactUs.html">Contact Us</a></li>
-						    	</ul>
+						    	</ul><!-- nav -->
+
 							</div><!-- span7 -->
 				  		</div><!-- row -->
 			  		</div><!-- container -->
@@ -94,7 +126,6 @@
 					    <img src="images/carousel/banner_image_4.jpg" alt="" />
 					    <img src="images/carousel/banner_image_5.jpg" alt="" />
 					    <img src="images/carousel/banner_image_6.jpg" alt="" />
-					    <img src="images/carousel/banner_image_7.jpg" alt="" />
 					</div>
 
 				
@@ -120,7 +151,7 @@
 
 				    <ul class="subNavList clearfix industryAjax">
 						<li id="industry1"><a href="javascript:void(0);" name="ajax/industry-segments-we-cater.html">Industry Segments We Cater</a> <span></span></li>
-						<li id="industry2"><a href="javascript:void(0);" name="ajax/industry-post-requirment.html">Post Your Requirement</a></li>											
+						<li id="industry2"><a href="javascript:void(0);" name="ajax/industry-post-requirment.php">Post Your Requirement</a></li>											
 				    </ul>
 
 				    <ul class="subNavList clearfix currentJobAjax">
@@ -236,15 +267,16 @@
 		<script type="text/javascript">
 			$(window).load(function() {
 			    $('#slider').nivoSlider({
-				    effect: 'boxRainGrow',            // Specify sets like: 'fold,fade,sliceDown'
+				    effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
 				    slices: 15,                     // For slice animations
 				    boxCols: 8,                     // For box animations
 				    boxRows: 4,                     // For box animations
-				    animSpeed: 500,                 // Slide transition speed
-				    pauseTime: 4000,                // How long each slide will show
+				    animSpeed: 250,                 // Slide transition speed
+				    pauseTime: 3500,                // How long each slide will show
 				    startSlide: 0,                  // Set starting Slide (0 index)
 				    directionNav: true,             // Specify sets like: 'fold,fade,sliceDown'
 				    controlNav: false,               // 1,2,3... navigation
+				    pauseOnHover: false,             // Stop animation while hovering
 				});
 			});
 		</script>
