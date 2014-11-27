@@ -1,0 +1,88 @@
+<div>
+	
+	<div class="animated de2ms fadeInRight">
+		<div id="form-messages_industry" class="animated fadeInDown de4ms"></div>
+		<span>Fields are mandatory Fill the form below Your Name</span>
+		<br/> <br/>
+		<form id="ajax-industry" class="form-horizontal" method="post" action="ajax/industryMailer.php">
+
+			<div class="control-group">
+				<label class="control-label" for="compName">Company Name</label>
+				<div class="controls">
+					<input type="text" id="compName" name="compName">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="designation">Designation</label>
+				<div class="controls">
+					<input type="text" id="designation" name="designation">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="rEmail">Email *</label>
+				<div class="controls">
+					<input type="text" id="rEmail" name="rEmail">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="pAddress">Postal Address</label>
+				<div class="controls">
+					<input type="text" id="pAddress" name="pAddress">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="city">City / State</label>
+				<div class="controls">
+					<input type="text" id="city" name="city">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="country">Country *</label>
+				<div class="controls">
+					<input type="text" id="country" name="country">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="mob">Phone / Mobile No. * </label>
+				<div class="controls">
+					<input type="text" id="mob" name="mob">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+
+			<div class="control-group">
+				<label class="control-label" for="requirement">Your Requirement</label>
+				<div class="controls">
+					<textarea rows="6" id="requirement" name="requirement"></textarea>
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+						
+			<div class="control-group">
+				
+				<div class="controls">
+					<input type="submit" value="Submit" name="submit">
+					<input type="reset" value="Reset" name="reset" id="reset">
+				</div><!-- controls -->			
+			</div><!-- control-group -->
+			
+		</form>
+	</div><!-- resumeWrap -->
+	
+	<script src="js/appIndustry.js"></script>
+	<script type="text/javascript">
+
+		$("#reset").click(function(){
+
+			$("#form-messages_industry").empty();
+			$("#form-messages_industry").removeClass('success error fadeInUp');
+
+		});
+	
+	</script>
+
+</div><!-- resumeOuter -->

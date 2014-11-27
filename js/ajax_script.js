@@ -2,11 +2,22 @@ $(document).ready(function(){
 
 	$("a").click(function() {
 
+		// Code for loading Ajax Content
+		var current = $(this).attr("name");
+		// alert(current);
+		$(".pageContent").html("");
+		$(".pageContent").load(current);
+
+		// Code for enabling/disabling yellow strip menu
 		var idName = $(this).parent().attr('id');
-		if(idName == "home"){
-			$(".subNavWrap ul").css("display","none");
-			$("#home").child().addClass("active");	
+		if((idName == "home") ||
+			(idName == "companyLogo") || 
+			(idName == "homeFt")){
+			$("li").removeClass("active");
+			$("#home").addClass("active");
+			$(".subNavWrap ul").css("display","none");	
 		}
+
 		if((idName == "abus1") || 
 			(idName == "abus2") || 
 			(idName == "abus3") || 
@@ -14,8 +25,8 @@ $(document).ready(function(){
 			(idName == "aboutUs") || 
 			(idName == "aboutUsFt")){
 			
-				$("a").removeClass("active");
-				$(".aboutUsAjax > a").addClass("active");
+				$("li").removeClass("active");
+				$("#aboutUs").addClass("active");
 				$(".subNavWrap ul").css("display","none");
 				$(".aboutUsAjax").css("display","block");
 		}
@@ -24,35 +35,48 @@ $(document).ready(function(){
 			(idName == "serv2") || 
 			(idName == "serv3") || 
 			(idName == "serv4") || 
+			(idName == "servIco1") || 
+			(idName == "servIco2") || 
+			(idName == "servIco3") || 
 			(idName == "services") || 
 			(idName == "servicesFt")){
-			$("a").removeClass("active");
-			$("#services > a").addClass("active");
-			$(".subNavWrap ul").css("display","none");
-			$(".servicesAjax").css("display","block");
+			
+				$("li").removeClass("active");
+				$("#services").addClass("active");
+				$(".subNavWrap ul").css("display","none");
+				$(".servicesAjax").css("display","block");
 		}
 
-		if((idName == "industry") || (idName == "industryFt")){
-			$("#industry").addClass("active");
-			$(".subNavWrap ul").css("display","none");
-			$(".industryAjax").css("display","block");
+		
+		if((idName == "indu1") || 
+			(idName == "indu2") || 
+			(idName == "industry") || 
+			(idName == "industryFt")){
+			
+				$("li").removeClass("active");
+				$("#industry").addClass("active");
+				$(".subNavWrap ul").css("display","none");
+				$(".industryAjax").css("display","block");
 		}
 
-		if(idName == "contactUs"){
+		if((idName == "contactUs") || (idName == "contactUsFt")){
+			$("li").removeClass("active");
+			$("#contactUs").addClass("active");
 			$(".subNavWrap ul").css("display","none");
-			$("#contactUs").addClass("active");	
 		}
 
 		if(idName == "currentJob"){
+			$("li").removeClass("active");
 			$("#currentJob").addClass("active");
 			$(".subNavWrap ul").css("display","none");
 			$(".currentJobAjax").css("display","block");
 		}
 
-		var current = $(this).attr("name");
-		// alert(current);
-		$(".pageContent").html("");
-		$(".pageContent").load(current);
+		if((idName == "careers") || idName == "testimonials"){
+			$("li").removeClass("active");
+			$("#currentJob").addClass("active");
+			$(".subNavWrap ul").css("display","none");
+		}
 
 		// For About Us Menu
 		// if(current == "ajax/aboutUs-company.html"){

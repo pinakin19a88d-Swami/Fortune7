@@ -1,0 +1,19 @@
+.success {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: #468847;
+  border: 3px solid #000;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.error {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: #b94a48;
+  border: 3px solid #000;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
