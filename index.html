@@ -3,7 +3,7 @@
 
 	<head>
 		
-		<title>Fortune - Personnel Services</title>
+		<title>Fortune2 - Personnel Services</title>
 
 		<!-- SEO -->
 		<meta name="description" content="">
@@ -23,6 +23,7 @@
 		<!-- <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" /> -->
 		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
 		<link rel="stylesheet" type="text/css" href="css/home_style.css" />
 
 		<!--[if lte IE 8]>
@@ -118,17 +119,6 @@
 			<div class="container">
 
 				
-					
-					<div id="slider" class="nivoSlider">
-					    <img src="images/carousel/home_banner.jpg" alt="" />
-					    <img src="images/carousel/banner_image_1.jpg" alt="" />
-					    <img src="images/carousel/banner_image_2.jpg" alt="" />
-					    <img src="images/carousel/banner_image_3.jpg" alt="" />
-					    <img src="images/carousel/banner_image_4.jpg" alt="" />
-					    <img src="images/carousel/banner_image_5.jpg" alt="" />
-					    <img src="images/carousel/banner_image_6.jpg" alt="" />
-					</div>
-
 				
 			</div><!-- container starts -->
 		</section><!-- Sliderwrap starts -->
@@ -267,21 +257,11 @@
 		<script type="text/javascript" src="js/ajax_script.js"></script>
 
 		<script type="text/javascript">
-			$(window).load(function() {
-			    $('#slider').nivoSlider({
-				    effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
-				    slices: 15,                     // For slice animations
-				    boxCols: 8,                     // For box animations
-				    boxRows: 4,                     // For box animations
-				    animSpeed: 250,                 // Slide transition speed
-				    pauseTime: 3500,                // How long each slide will show
-				    startSlide: 0,                  // Set starting Slide (0 index)
-				    directionNav: true,             // Specify sets like: 'fold,fade,sliceDown'
-				    controlNav: false,               // 1,2,3... navigation
-				    pauseOnHover: false,             // Stop animation while hovering
-				});
-			});
+
+			$(".sliderWrap .container").load("ajax/carousel.html");
+
 		</script>
+		
 	</body>
 
 </html>

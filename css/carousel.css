@@ -1,0 +1,196 @@
+#carousel {
+	position: relative;
+	width: 940px;
+	height: 434px;
+	z-index: 200;
+}
+#carousel h1 {
+	position: absolute;
+	color: #fff;
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px 6px black;
+	top: 190px;
+	left: 60px;
+}
+#carousel .carouselNav {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/*background: #444;*/
+
+	-webkit-transition: transform 0.2s;
+	   -moz-transition: transform 0.2s;
+		 -o-transition: transform 0.2s;
+		-ms-transition: transform 0.2s;
+			transition: transform 0.2s;
+
+	-webkit-transform: perspective( 600px );
+	   -moz-transform: perspective( 600px );
+		 -o-transform: perspective( 600px );
+		-ms-transform: perspective( 600px );
+			transform: perspective( 600px );
+	
+	-webkit-transform: perspective-origin: 100% 100%;
+	   -moz-transform: perspective-origin: 100% 100%;
+		 -o-transform: perspective-origin: 100% 100%;
+		-ms-transform: perspective-origin: 100% 100%;
+			transform: perspective-origin: 100% 100%;
+
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		 -o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+#carousel .carouselNav li {
+	position: relative;
+	float: left;
+	z-index: 200;
+	
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+		 -o-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+}
+#carousel .carouselNav li span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#carousel .carouselNav .slide-1 {
+	width: 159px;
+	height: 434px;
+	background: url("../images/carousel/slide-1.jpg") no-repeat;
+}
+#carousel .carouselNav .slide-3,
+#carousel .carouselNav .slide-4,
+#carousel .carouselNav .slide-5,
+#carousel .carouselNav .slide-6 {
+	width: 157px;
+	height: 434px;
+}
+#carousel .carouselNav .slide-2 {
+	width: 153px;
+	height: 434px;
+	background: url("../images/carousel/slide-2.jpg") no-repeat;
+}
+#carousel .carouselNav .slide-3 {
+	background: url("../images/carousel/slide-3.jpg") no-repeat;
+}
+#carousel .carouselNav .slide-4 {
+	background: url("../images/carousel/slide-4.jpg") no-repeat;
+}
+#carousel .carouselNav .slide-5 {
+	background: url("../images/carousel/slide-5.jpg") no-repeat;
+}
+#carousel .carouselNav .slide-6 {
+	background: url("../images/carousel/slide-6.jpg") no-repeat;
+}
+
+/* carouselNav Hover classes Start */
+#carousel .carouselNav .slide-1:hover {
+	-webkit-transform: translateZ( 20px );
+	   -moz-transform: translateZ( 20px );
+		 -o-transform: translateZ( 20px );
+		-ms-transform: translateZ( 20px );
+			transform: translateZ( 20px );
+	box-shadow: black 15px 0px 40px;
+	z-index: 250;
+	cursor: pointer;
+
+	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
+			transform: rotateY( 20deg ) translateZ( 10px );*/
+}
+#carousel .carouselNav .slide-1:hover > span {
+	border: 3px solid crimson;
+}
+
+#carousel .carouselNav .slide-2:hover {
+	-webkit-transform: translateZ( 20px );
+	   -moz-transform: translateZ( 20px );
+		 -o-transform: translateZ( 20px );
+		-ms-transform: translateZ( 20px );
+			transform: translateZ( 20px );
+	box-shadow: black 10px 0px 40px;
+	z-index: 250;
+	cursor: pointer;
+
+	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
+			transform: rotateY( 20deg ) translateZ( 10px );*/
+}
+#carousel .carouselNav .slide-2:hover > span {
+	border: 3px solid crimson;
+}
+
+#carousel .carouselNav .slide-3:hover {
+	-webkit-transform: translateZ( 20px );
+	   -moz-transform: translateZ( 20px );
+		 -o-transform: translateZ( 20px );
+		-ms-transform: translateZ( 20px );
+			transform: translateZ( 20px );
+	box-shadow: black 5px 0px 40px;
+	z-index: 250;
+	cursor: pointer;
+
+	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
+			transform: rotateY( 20deg ) translateZ( 10px );*/
+}
+#carousel .carouselNav .slide-3:hover > span {
+	border: 3px solid crimson;
+}
+
+#carousel .carouselNav .slide-4:hover {
+	-webkit-transform: translateZ( 20px );
+	   -moz-transform: translateZ( 20px );
+		 -o-transform: translateZ( 20px );
+		-ms-transform: translateZ( 20px );
+			transform: translateZ( 20px );
+	box-shadow: black -5px 0px 40px;
+	z-index: 250;
+	cursor: pointer;
+
+	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
+			transform: rotateY( 20deg ) translateZ( 10px );*/
+}
+#carousel .carouselNav .slide-4:hover > span {
+	border: 3px solid crimson;
+}
+
+#carousel .carouselNav .slide-5:hover {
+	-webkit-transform: translateZ( 20px );
+	   -moz-transform: translateZ( 20px );
+		 -o-transform: translateZ( 20px );
+		-ms-transform: translateZ( 20px );
+			transform: translateZ( 20px );
+	box-shadow: black -10px 0px 40px;
+	z-index: 250;
+	cursor: pointer;
+
+	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
+			transform: rotateY( 20deg ) translateZ( 10px );*/
+}
+#carousel .carouselNav .slide-5:hover > span {
+	border: 3px solid crimson;
+}
+
+#carousel .carouselNav .slide-6:hover {
+	-webkit-transform: translateZ( 20px );
+	   -moz-transform: translateZ( 20px );
+		 -o-transform: translateZ( 20px );
+		-ms-transform: translateZ( 20px );
+			transform: translateZ( 20px );
+	box-shadow: black -15px 0px 40px;
+	z-index: 250;
+	cursor: pointer;
+
+	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
+			transform: rotateY( 20deg ) translateZ( 10px );*/
+}
+#carousel .carouselNav .slide-6:hover > span {
+	border: 3px solid crimson;
+}
+/* carouselNav Hover classes End */
