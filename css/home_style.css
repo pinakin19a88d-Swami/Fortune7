@@ -253,6 +253,7 @@ body {
 .mainNav .nav {
 	/*overflow: hidden;*/
 	margin: 45px 0 0 50px;
+	z-index: 200;
 }
 .mainNav .brand {
 	width: 150px;
@@ -310,6 +311,15 @@ ul {
 	   -moz-transition: all 0.5s ease-in-out;
 		 -o-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
+}
+.aboutUsNav {
+	width: 125px;
+}
+.servicesNav {
+	width: 140px;
+}
+.industryNav {
+	width: 210px;
 }
 .aboutUsNav a,
 .servicesNav a,
