@@ -48,5 +48,45 @@ $(document).ready(function(){
 				});
 
 	});
+	
+	window.setTimeout(function() {  
+ 		
+ 			$("#carousel").css("display","none");
+		$("#slider").css("display","block");
+
+		// alert(id);
+		$('#slider').nivoSlider({
+				    effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
+				    slices: 15,                     // For slice animations
+				    boxCols: 8,                     // For box animations
+				    boxRows: 4,                     // For box animations
+				    animSpeed: 250,                 // Slide transition speed
+				    pauseTime: 3000,                // How long each slide will show
+				    startSlide: 0,                  // Set starting Slide (0 index)
+				    directionNav: true,             // Specify sets like: 'fold,fade,sliceDown'
+				    controlNav: false,               // 1,2,3... navigation
+				    pauseOnHover: false,             // Stop animation while hovering
+				    manualAdvance: false,           // Force manual transitions
+				    lastSlide: function(){
+
+				    	// $("#carousel").css("display","block");
+				    	// $("#slider").css("display","none");
+				    	$(".sliderWrap .container").load("ajax/carousel.html");
+
+				    },        // Triggers when last slide is shown
+				});
+	    
+	    },
+	    10000
+	);
+
+	window.setTimeout(function() {  
+ 		
+ 			$(".sliderWrap").css("background-color","#cccccc");
+	    
+	    },
+	    1500
+	);
+	
 
 });

@@ -13,6 +13,7 @@
 	text-shadow: 2px 2px 6px black;
 	top: 190px;
 	left: 60px;
+	z-index: 300;
 }
 #carousel .carouselNav {
 	position: relative;
@@ -45,7 +46,7 @@
 			transform-style: preserve-3d;
 }
 #carousel .carouselNav li {
-	position: relative;
+	position: absolute;
 	float: left;
 	z-index: 200;
 	
@@ -64,7 +65,10 @@
 #carousel .carouselNav .slide-1 {
 	width: 159px;
 	height: 434px;
-	background: url("../images/carousel/slide-1.jpg") no-repeat;
+	/*background: url("../images/carousel/slide-1.jpg") no-repeat;*/
+	background: url("../images/carousel/banner_image_1.jpg") no-repeat;
+	background-position: 0 0;
+	background-position-x: 0;
 }
 #carousel .carouselNav .slide-3,
 #carousel .carouselNav .slide-4,
@@ -76,121 +80,79 @@
 #carousel .carouselNav .slide-2 {
 	width: 153px;
 	height: 434px;
-	background: url("../images/carousel/slide-2.jpg") no-repeat;
+	/*background: url("../images/carousel/slide-2.jpg") no-repeat;*/
+	background: url("../images/carousel/banner_image_2.jpg") no-repeat;
+	background-position: -160px 0;
+	background-position-x: -160px;
 }
 #carousel .carouselNav .slide-3 {
-	background: url("../images/carousel/slide-3.jpg") no-repeat;
+	/*background: url("../images/carousel/slide-3.jpg") no-repeat;*/
+	background: url("../images/carousel/banner_image_3.jpg") no-repeat;
+	background-position: -312px 0;
+	background-position-x: -312px;
 }
 #carousel .carouselNav .slide-4 {
-	background: url("../images/carousel/slide-4.jpg") no-repeat;
+	/*background: url("../images/carousel/slide-4.jpg") no-repeat;*/
+	background: url("../images/carousel/banner_image_4.jpg") no-repeat;
+	background-position: -450px 0;
+	background-position-x: -450px;
 }
 #carousel .carouselNav .slide-5 {
-	background: url("../images/carousel/slide-5.jpg") no-repeat;
+	/*background: url("../images/carousel/slide-5.jpg") no-repeat;*/
+	background: url("../images/carousel/banner_image_5.jpg") no-repeat;
+	background-position: -140px 0;
+	background-position-x: -140px;
 }
 #carousel .carouselNav .slide-6 {
-	background: url("../images/carousel/slide-6.jpg") no-repeat;
+	/*background: url("../images/carousel/slide-6.jpg") no-repeat;*/
+	background: url("../images/carousel/banner_image_6.jpg") no-repeat;
+	background-position: -258px 0;
+	background-position-x: -258px;
+}
+
+#carousel .carouselNav .slide-2 {
+	margin-left: 159px;
+}
+#carousel .carouselNav .slide-3 {
+	margin-left: 312px;
+}
+#carousel .carouselNav .slide-4 {
+	margin-left: 469px;
+}
+#carousel .carouselNav .slide-5 {
+	margin-left: 626px;
+}
+#carousel .carouselNav .slide-6 {
+	margin-left: 783px;
 }
 
 /* carouselNav Hover classes Start */
-#carousel .carouselNav .slide-1:hover {
-	-webkit-transform: translateZ( 20px );
-	   -moz-transform: translateZ( 20px );
-		 -o-transform: translateZ( 20px );
-		-ms-transform: translateZ( 20px );
-			transform: translateZ( 20px );
-	box-shadow: black 15px 0px 40px;
-	z-index: 250;
-	cursor: pointer;
 
-	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
-			transform: rotateY( 20deg ) translateZ( 10px );*/
-}
-#carousel .carouselNav .slide-1:hover > span {
-	border: 3px solid crimson;
-}
-
-#carousel .carouselNav .slide-2:hover {
-	-webkit-transform: translateZ( 20px );
-	   -moz-transform: translateZ( 20px );
-		 -o-transform: translateZ( 20px );
-		-ms-transform: translateZ( 20px );
-			transform: translateZ( 20px );
-	box-shadow: black 10px 0px 40px;
-	z-index: 250;
-	cursor: pointer;
-
-	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
-			transform: rotateY( 20deg ) translateZ( 10px );*/
-}
-#carousel .carouselNav .slide-2:hover > span {
-	border: 3px solid crimson;
-}
-
-#carousel .carouselNav .slide-3:hover {
-	-webkit-transform: translateZ( 20px );
-	   -moz-transform: translateZ( 20px );
-		 -o-transform: translateZ( 20px );
-		-ms-transform: translateZ( 20px );
-			transform: translateZ( 20px );
-	box-shadow: black 5px 0px 40px;
-	z-index: 250;
-	cursor: pointer;
-
-	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
-			transform: rotateY( 20deg ) translateZ( 10px );*/
-}
-#carousel .carouselNav .slide-3:hover > span {
-	border: 3px solid crimson;
-}
-
-#carousel .carouselNav .slide-4:hover {
-	-webkit-transform: translateZ( 20px );
-	   -moz-transform: translateZ( 20px );
-		 -o-transform: translateZ( 20px );
-		-ms-transform: translateZ( 20px );
-			transform: translateZ( 20px );
-	box-shadow: black -5px 0px 40px;
-	z-index: 250;
-	cursor: pointer;
-
-	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
-			transform: rotateY( 20deg ) translateZ( 10px );*/
-}
-#carousel .carouselNav .slide-4:hover > span {
-	border: 3px solid crimson;
-}
-
-#carousel .carouselNav .slide-5:hover {
-	-webkit-transform: translateZ( 20px );
-	   -moz-transform: translateZ( 20px );
-		 -o-transform: translateZ( 20px );
-		-ms-transform: translateZ( 20px );
-			transform: translateZ( 20px );
-	box-shadow: black -10px 0px 40px;
-	z-index: 250;
-	cursor: pointer;
-
-	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
-			transform: rotateY( 20deg ) translateZ( 10px );*/
-}
-#carousel .carouselNav .slide-5:hover > span {
-	border: 3px solid crimson;
-}
-
+#carousel .carouselNav .slide-1:hover,
+#carousel .carouselNav .slide-2:hover,
+#carousel .carouselNav .slide-3:hover,
+#carousel .carouselNav .slide-4:hover,
+#carousel .carouselNav .slide-5:hover,
 #carousel .carouselNav .slide-6:hover {
-	-webkit-transform: translateZ( 20px );
-	   -moz-transform: translateZ( 20px );
-		 -o-transform: translateZ( 20px );
-		-ms-transform: translateZ( 20px );
-			transform: translateZ( 20px );
-	box-shadow: black -15px 0px 40px;
+	
+	width: 940px;
+	margin-left: 0;
 	z-index: 250;
+	box-shadow: black 0px 0px 20px;
 	cursor: pointer;
+	background-position: 0 0;
+	background-position-x: 0;
 
-	/*-webkit-transform: rotateY( 20deg ) translateZ( 10px );
-			transform: rotateY( 20deg ) translateZ( 10px );*/
 }
+
+#carousel .carouselNav .slide-1:hover > span,
+#carousel .carouselNav .slide-2:hover > span,
+#carousel .carouselNav .slide-3:hover > span,
+#carousel .carouselNav .slide-4:hover > span,
+#carousel .carouselNav .slide-5:hover > span,
 #carousel .carouselNav .slide-6:hover > span {
+	
 	border: 3px solid crimson;
+
 }
 /* carouselNav Hover classes End */
