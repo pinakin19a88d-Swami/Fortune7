@@ -530,6 +530,7 @@ background: url("../images/industry_bg.png") repeat-y;
 	float: left;
 	width: 389px;
 	height: 274px;
+	margin-top: -2px;
 	background-color: #cccccc;
 	border: 4px solid #999;
 }

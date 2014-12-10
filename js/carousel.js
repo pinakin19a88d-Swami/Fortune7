@@ -40,8 +40,6 @@ $(document).ready(function(){
 				    manualAdvance: false,           // Force manual transitions
 				    lastSlide: function(){
 
-				    	// $("#carousel").css("display","block");
-				    	// $("#slider").css("display","none");
 				    	$(".sliderWrap .container").load("ajax/carousel.html");
 
 				    },        // Triggers when last slide is shown
@@ -49,12 +47,13 @@ $(document).ready(function(){
 
 	});
 	
-	window.setTimeout(function() {  
+	function startMyTimer(){
+
+		var mytimer = window.setTimeout(function() {  
  		
- 			$("#carousel").css("display","none");
+		$("#carousel").css("display","none");
 		$("#slider").css("display","block");
 
-		// alert(id);
 		$('#slider').nivoSlider({
 				    effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
 				    slices: 15,                     // For slice animations
@@ -69,16 +68,35 @@ $(document).ready(function(){
 				    manualAdvance: false,           // Force manual transitions
 				    lastSlide: function(){
 
-				    	// $("#carousel").css("display","block");
-				    	// $("#slider").css("display","none");
 				    	$(".sliderWrap .container").load("ajax/carousel.html");
 
-				    },        // Triggers when last slide is shown
+				    },
 				});
 	    
-	    },
-	    10000
-	);
+		    },
+		    5000
+		);
+
+		$("#carousel .carouselNav li").hover(function(){
+
+			clearTimeout(mytimer);
+			// $("#carousel > h1").css("display","none");
+			$("#carousel > h1").removeClass("fadeInLeft de16ms");
+			$("#carousel > h1").addClass("fadeOutLeft");
+
+		},
+		function(){
+
+			$("#carousel > h1").css("display","block");
+			// $("#carousel > h1").removeClass("de16ms");
+			$("#carousel > h1").removeClass("fadeOutLeft");
+			$("#carousel > h1").addClass("fadeInLeft");
+			startMyTimer();
+
+		});
+
+	}
+	startMyTimer();	
 
 	window.setTimeout(function() {  
  		
