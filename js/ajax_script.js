@@ -4,12 +4,17 @@ $(document).ready(function(){
 
 		// Code for loading Ajax Content
 		var current = $(this).attr("name");
-		// alert(current);
 		$(".pageContent > .currentJobTable").css("display","none");
 		$(".pageContent > .otherContent").html("");
 		$(".pageContent > .otherContent").load(current);
 
 		// Code for enabling/disabling yellow strip menu
+		function removeActiveClass() {
+
+			$(".subNavList > li").removeClass("active");
+
+		}
+
 		var idName = $(this).parent().attr('id');
 		if( (idName == "home") ||
 			(idName == "companyLogo") || 
@@ -25,6 +30,23 @@ $(document).ready(function(){
 			(idName == "abus4") || 
 			(idName == "aboutUs") || 
 			(idName == "aboutUsFt") ){
+
+				if(idName == "abus1"){
+					removeActiveClass();
+					$("#aboutUs1").addClass("active");
+				}
+				if(idName == "abus2"){
+					removeActiveClass();
+					$("#aboutUs2").addClass("active");
+				}
+				if(idName == "abus3"){
+					removeActiveClass();
+					$("#aboutUs3").addClass("active");
+				}
+				if(idName == "abus4"){
+					removeActiveClass();
+					$("#aboutUs4").addClass("active");
+				}
 			
 				$(".nav > li").removeClass("active");
 				$("#aboutUs").addClass("active");
@@ -42,6 +64,23 @@ $(document).ready(function(){
 			(idName == "servIco3") || 
 			(idName == "services") || 
 			(idName == "servicesFt") ){
+
+				if(idName == "serv1"){
+					removeActiveClass();
+					$("#services1").addClass("active");
+				}
+				if(idName == "serv2"){
+					removeActiveClass();
+					$("#services2").addClass("active");
+				}
+				if(idName == "serv3"){
+					removeActiveClass();
+					$("#services3").addClass("active");
+				}
+				if(idName == "serv4"){
+					removeActiveClass();
+					$("#services4").addClass("active");
+				}
 			
 				$(".nav > li").removeClass("active");
 				$("#services").addClass("active");
@@ -54,8 +93,17 @@ $(document).ready(function(){
 			(idName == "indu2") || 
 			(idName == "industry") || 
 			(idName == "industryFt") ){
+
+				if(idName == "indu1"){
+					removeActiveClass();
+					$("#industry1").addClass("active");
+				}
+				if(idName == "indu2"){
+					removeActiveClass();
+					$("#industry2").addClass("active");
+				}
 			
-				$("li").removeClass("active");
+				$(".nav > li").removeClass("active");
 				$("#industry").addClass("active");
 				$(".subNavWrap ul").css("display","none");
 				$(".industryAjax").css("display","block");
@@ -82,16 +130,20 @@ $(document).ready(function(){
 
 		var idName = $(this).parent().attr('id');
 		// alert(idName);
-		if(idName == "aboutUs"){
+		if( (idName == "aboutUs") || (idName == "aboutUsFt") ){
+			removeActiveClass();
 			$("#aboutUs1").addClass("active");
 		}
-		if(idName == "services"){
+		if( (idName == "services") || (idName == "servicesFt") ){
+			removeActiveClass();
 			$("#services1").addClass("active");
 		}
-		if(idName == "industry"){
+		if( (idName == "industry") || (idName == "industryFt") ){
+			removeActiveClass();
 			$("#industry1").addClass("active");
 		}
-		if(idName == "currentJob"){
+		if( (idName == "currentJob") || (idName == "currentJobFt") ){
+			removeActiveClass();
 			$("#currentJob1").addClass("active");
 		}
 
@@ -112,7 +164,6 @@ $(document).ready(function(){
 			(idName == "currentJob4") ){
 			$(".subNavList > li").removeClass("active");
 			idName = "#"+idName;
-			// alert(idName);
 			$(idName).addClass("active");
 		}
 
@@ -125,9 +176,9 @@ $(document).ready(function(){
 			$(idName).addClass("servicesActive");
 
 		}
+
+		$(".pageContent > .tableButtons").css("display","none");
 		
-		// $(".nav > li").removeClass("active");
-		// $(this).parent().addClass("active");
 	});
 
 	// Code for Services Icons - Activation, Deactivation & Hover Effect
@@ -176,9 +227,29 @@ $(document).ready(function(){
 
 	 }
 
-	$("#servIco1").click(function(){activateServicesIcon("1");});
-	$("#servIco2").click(function(){activateServicesIcon("2");});
-	$("#servIco3").click(function(){activateServicesIcon("3");});
+	$("#servIco1 > a > i, #servIco1 > a > span").click(function(){
+		
+		$(".subNavList > li").removeClass("active");
+		$("#services1").addClass("active");
+		activateServicesIcon("1");
+
+	});
+	
+	$("#servIco2 > a > i, #servIco2 > a > span").click(function(){
+
+		$(".subNavList > li").removeClass("active");
+		$("#services2").addClass("active");
+		activateServicesIcon("2");
+
+	});
+	
+	$("#servIco3 > a > i, #servIco3 > a > span").click(function(){
+
+		$(".subNavList > li").removeClass("active");
+		$("#services3").addClass("active");
+		activateServicesIcon("3");
+
+	});
 
 	$("#servIco1 > a").hover(function(){
 
@@ -215,6 +286,28 @@ $(document).ready(function(){
 		if( !($("#servIco3 > a > span").hasClass("servicesActive")) )
 		{
 			deactivateServicesIcons("3");
+		}
+
+	});
+
+	$("input").click(function(){
+
+		var loadFile = $(this).attr("name");
+		var id = $(this).attr('id');
+		if(id == "applyBtn"){
+			
+			$(".pageContent > .currentJobTable").css("display","none");
+			$(".pageContent > .tableButtons").css("display","none");
+			$(".pageContent > .otherContent").html("");
+			$(".pageContent > .otherContent").load(loadFile);
+
+		}
+		if(id == "backBtn"){
+
+			$(".pageContent > .currentJobTable").css("display","block");
+			$(".pageContent > .tableButtons").css("display","none");
+			$(".pageContent > .otherContent").html("");
+
 		}
 
 	});

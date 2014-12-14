@@ -9,7 +9,7 @@
 		    {
 		        // EDIT THE 2 LINES BELOW AS REQUIRED
 		     
-		        $email_to = "info@inspiremultimedia.co.in";
+		        $email_to = "rajeev@fortuneps.com";
 		        $email_subject = "Fortune - Industry Post Requirement";
 		     
 		        function died($error) 

@@ -728,7 +728,8 @@ textarea {
 	width: 250px;
 }
 input[type="submit"],
-input[type="reset"]{
+input[type="reset"],
+input[type="button"] {
 	font-size: 13px;
 	line-height: 24px;
 	color: #fff;
@@ -738,6 +739,10 @@ input[type="reset"]{
 	font-weight: normal;
 	margin-right: 10px!important;
 	padding: 1px 10px;
+}
+
+.tableButtons {
+	margin-top: 20px;
 }
 
 #form-messages_careers,
