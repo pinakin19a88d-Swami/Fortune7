@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	$(".mainNav .nav li").removeClass("active");
 	$(".subNavList li").removeClass("active");
+	$("#home").addClass("active");
 
 
 	$("#aboutUs, #services, #industry").hover(function(){
@@ -13,4 +14,5 @@ $(document).ready(function(){
 		$(".mainNav .nav").css("z-index","200");
 
 	});
+
 });
