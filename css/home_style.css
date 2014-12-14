@@ -409,6 +409,7 @@ ul {
 	color: #cc0000;
 	text-decoration: none;
 }
+
 .contentWrap {
 	-webkit-transition: all 0.5s ease;
 	   -moz-transition: all 0.5s ease;
@@ -584,10 +585,17 @@ background: url("../images/industry_bg.png") repeat-y;
 	display: block;	
 	text-align: center;
 	margin-bottom: 7px;
+
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
 }
 .rightCol li a:hover,
 .rightCol li a:hover span{
 	text-decoration: none;
+	opacity: 0.7;
 }
 .rightCol li a img {
 	margin-bottom: 10px;
@@ -661,6 +669,13 @@ background: url("../images/industry_bg.png") repeat-y;
 }
 .servicesIco a:hover span{
 
+}
+#servIco1 > a > span {
+	width: 95px;
+}
+.servicesActive {
+	color: #cc0000!important;
+	text-decoration: none;
 }
 /*Stars forms code*/
 
