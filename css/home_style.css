@@ -446,8 +446,8 @@ background: url("../images/industry_bg.png") repeat-y;
 	margin-bottom: 12px;
 }
 .pageContent p {
-	font-size: 13px;
-	line-height: 19px;
+	font-size: 14px;
+	line-height: 21px;
 	color: #666666;
 	margin-bottom: 20px;
 }
@@ -577,6 +577,9 @@ background: url("../images/industry_bg.png") repeat-y;
 
 .industryTop {
 	margin-bottom: 18px;
+}
+.industryTop >a {
+	display: block;
 }
 .rightCol li{
 	padding: 0 25px;
