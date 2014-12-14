@@ -5,7 +5,7 @@ $(document).ready(function(){
 		// Code for loading Ajax Content
 		var current = $(this).attr("name");
 		// alert(current);
-		$(".pageContent > .currentJobTable").css("display","block");
+		$(".pageContent > .currentJobTable").css("display","none");
 		$(".pageContent > .otherContent").html("");
 		$(".pageContent > .otherContent").load(current);
 
