@@ -92,9 +92,9 @@ $(document).ready(function(){
 		if( (idName == "indu1") || 
 			(idName == "indu2") || 
 			(idName == "industry") || 
-			(idName == "industryFt") ){
+			(idName == "industryFt") || idName =="industryLink"){
 
-				if(idName == "indu1"){
+				if(idName == "indu1" || idName == "industryLink"){
 					removeActiveClass();
 					$("#industry1").addClass("active");
 				}

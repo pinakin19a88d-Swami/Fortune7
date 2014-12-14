@@ -596,7 +596,8 @@ background: url("../images/industry_bg.png") repeat-y;
 			transition: all 0.3s ease;
 }
 .rightCol li a:hover,
-.rightCol li a:hover span{
+.rightCol li a:hover span,
+.industryTop a:hover{
 	text-decoration: none;
 	opacity: 0.7;
 }
@@ -636,6 +637,7 @@ background: url("../images/industry_bg.png") repeat-y;
 }
 .servicesIco li a {
 	display: block;
+	overflow: hidden;
 }
 .servicesIco a i {
 	display: inline-block;
