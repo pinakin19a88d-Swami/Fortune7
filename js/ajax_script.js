@@ -11,9 +11,9 @@ $(document).ready(function(){
 
 		// Code for enabling/disabling yellow strip menu
 		var idName = $(this).parent().attr('id');
-		if((idName == "home") ||
+		if( (idName == "home") ||
 			(idName == "companyLogo") || 
-			(idName == "homeFt")){
+			(idName == "homeFt") ){
 			$(".nav > li").removeClass("active");
 			$("#home").addClass("active");
 			$(".subNavWrap ul").css("display","none");
@@ -74,7 +74,7 @@ $(document).ready(function(){
 			$(".currentJobAjax").css("display","block");
 		}
 
-		if((idName == "careers") || idName == "testimonials"){
+		if((idName == "careers") || (idName == "testimonials")){
 			$(".nav > li").removeClass("active");
 			$("#currentJob").addClass("active");
 			$(".subNavWrap ul").css("display","none");
