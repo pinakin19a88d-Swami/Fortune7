@@ -228,6 +228,9 @@ ul {
 .blueTxt {
 	color: #006699;
 }
+.italicText {
+	font-style: italic;
+}
 .boldItalic {
 	font-weight: bold;
 	font-style: italic;
@@ -256,7 +259,7 @@ body {
 	z-index: 200;
 }
 .mainNav .brand {
-	width: 150px;
+	width: 151px;
 	padding: 0 0;
 	margin: 20px 0 0 45px;
 }
@@ -437,7 +440,17 @@ background: url("../images/industry_bg.png") repeat-y;
 	font-size: 28px;
 	line-height: 32px;
 	font-weight: normal;
-	margin-bottom: 8px;
+	margin-bottom: 20px;
+}
+.pageContent h1 img {
+	position: absolute;
+	margin-top: 5px;
+}
+.pageContent h1 .aboutCompanyLogo {
+	margin: 0 0 0 3px;
+}
+.pageContent h1 .homeSpan {
+	margin-left: 130px;
 }
 .pageContent h6 {
 	font-size: 20px;
