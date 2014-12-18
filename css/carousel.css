@@ -82,8 +82,8 @@
 	height: 434px;
 	/*background: url("../images/carousel/slide-2.jpg") no-repeat;*/
 	background: url("../images/carousel/banner_image_2.jpg") no-repeat;
-	background-position: -160px 0;
-	background-position-x: -160px;
+	background-position: -258px 0;
+	background-position-x: -258px;
 }
 #carousel .carouselNav .slide-3 {
 	/*background: url("../images/carousel/slide-3.jpg") no-repeat;*/
@@ -106,8 +106,8 @@
 #carousel .carouselNav .slide-6 {
 	/*background: url("../images/carousel/slide-6.jpg") no-repeat;*/
 	background: url("../images/carousel/banner_image_6.jpg") no-repeat;
-	background-position: -258px 0;
-	background-position-x: -258px;
+	background-position: -160px 0;
+	background-position-x: -160px;
 }
 
 #carousel .carouselNav .slide-2 {

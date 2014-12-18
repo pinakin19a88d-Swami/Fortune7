@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+	$(".subNavWrap ul").css("display","none");
+	$(".homeAjax").css("display","block");
+	
+	$("a").click(function(){
+
+		if( $(this).parent().attr("id") == "companyLogo" ){
+
+			$(".sliderWrap .container").load("ajax/carousel.html");
+			$(".subNavWrap ul").css("display","none");
+			$(".homeAjax").css("display","block");
+
+		}
+
+	});
+
 	$("li > a").click(function(){
 
 		// alert($(this).parent().attr("id"));
@@ -28,6 +43,8 @@ $(document).ready(function(){
 
 			// alert("True");
 			$(".sliderWrap .container").load("ajax/carousel.html");
+			$(".subNavWrap ul").css("display","none");
+			$(".homeAjax").css("display","block");
 
 		}
 
