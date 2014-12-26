@@ -812,3 +812,7 @@ input[type="button"] {
 	margin: 25px 50px;
 }
 /* Ends Footer Code */
+.allowBullets {
+	list-style-type: disc;
+	padding-left: 17px;
+}
