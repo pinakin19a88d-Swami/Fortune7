@@ -53,7 +53,7 @@
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
 
-        $recipient = "fps1@fortuneps.com";
+        $recipient = "fps12@fortuneps.com";
 
         // Set the email subject.
         $subject = "New Careers Form from - $name";
@@ -76,8 +76,8 @@
 
         // Build the email headers.
         // $email_headers = "From: $nameOfCandidate <$email>";
-        $email_headers .= "Reply-To: <fps1@fortuneps.com>\r\n"; 
-        $email_headers .= "Return-Path: <fps1@fortuneps.com>\r\n"; 
+        $email_headers .= "Reply-To: <fps12@fortuneps.com>\r\n"; 
+        $email_headers .= "Return-Path: <fps12@fortuneps.com>\r\n"; 
         $email_headers .= "From: $name <$email>\r\n"; 
         $email_headers .= "Organization: My Organization\r\n"; 
         $email_headers .= "Content-Type: text/plain\r\n";
