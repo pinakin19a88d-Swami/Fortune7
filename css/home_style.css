@@ -440,14 +440,14 @@ background: url("../images/industry_bg.png") repeat-y;
 	font-size: 28px;
 	line-height: 32px;
 	font-weight: normal;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 }
 .pageContent h1 img {
 	position: absolute;
 	margin-top: 5px;
 }
 .pageContent h1 .aboutCompanyLogo {
-	margin: 0 0 0 3px;
+	margin: 6px 0 0 3px;
 }
 .pageContent h1 .homeSpan {
 	margin-left: 130px;
@@ -512,7 +512,9 @@ background: url("../images/industry_bg.png") repeat-y;
 .cuSection .contactDetails {
 	float: left;
 	width: 340px;
-
+}
+.cuSection .contactDetails img {
+	margin-bottom: 10px;
 }
 .cuSection .contactDetails .email {
 	color: #666666;
@@ -815,4 +817,10 @@ input[type="button"] {
 .allowBullets {
 	list-style-type: disc;
 	padding-left: 17px;
+}
+a.un-styled {
+	cursor: default!important;
+}
+a.un-styled:hover {
+	color: #666!important;
 }
