@@ -440,14 +440,14 @@ background: url("../images/industry_bg.png") repeat-y;
 	font-size: 28px;
 	line-height: 32px;
 	font-weight: normal;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 .pageContent h1 img {
 	position: absolute;
-	margin-top: 5px;
+	margin-top: -6px;
 }
 .pageContent h1 .aboutCompanyLogo {
-	margin: 6px 0 0 3px;
+	margin: -6px 0 0 3px;
 }
 .pageContent h1 .homeSpan {
 	margin-left: 130px;
