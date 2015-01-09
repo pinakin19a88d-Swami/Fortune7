@@ -386,9 +386,28 @@ ul {
 	padding-left: 8px;
 	display: none;
 }
+.homeAjax {
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style-type: none;
+	background-color: #ede7c3;
+	padding: 0 18px;
+}
 .subNavList li {
 	float: left;
 	padding: 16px 0 16px 22px;
+}
+.homeAjax li {
+	float: left;
+	padding: 16px 8px;
+	color: #333333;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 1px;
+}
+.homeAjax li:hover {
+	cursor: default;
 }
 .subNavList > li > a {
 	width: 90%;
@@ -406,6 +425,14 @@ ul {
 	height: 8px;
 	background: #767465;
 	margin-top: -11px;
+}
+.homeAjax > li > span {
+	display: inline-block;
+	float: right;
+	width: 2px;
+	height: 8px;
+	background: #767465;
+	margin: 2px 16px 2px 26px;
 } 
 .subNavList > li > a:hover, 
 .subNavList > li.active > a {
