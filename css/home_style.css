@@ -15,7 +15,9 @@
 .clearfix:after {
   clear: both;
 }
-
+.normal{
+	font-weight: normal!important;
+}
 a {
 	-webkit-transition: color 0.25s ease;
 	   -moz-transition: color 0.25s ease;
@@ -577,13 +579,18 @@ background: url("../images/industry_bg.png") repeat-y;
 	background-color: #cccccc;
 	border: 4px solid #999;
 }
-.website,
-.email {
+.website {
 	color: #666666;
 	font-weight: bold;
 }
-.website:hover,
+.email {
+	color: #fff;
+	font-weight: bold;
+}
 .email:hover {
+	color: #888;
+}
+.website:hover {
 	color: #555555;
 	font-weight: bold;
 }
@@ -606,14 +613,31 @@ background: url("../images/industry_bg.png") repeat-y;
 	height: 43px;
 	background: url("../images/slider_arrow_left.png") no-repeat;
 	left: 15px;
-	text-indent: -9999px
+	text-indent: -9999px;
+
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+.nivo-directionNav .nivo-prevNav:hover {
+	left: 5px;	
 }
 .nivo-directionNav .nivo-nextNav {
 	width: 43px;
 	height: 43px;
 	background: url("../images/slider_arrow_right.png") no-repeat;
 	right: 15px;
-	text-indent: -9999px
+	text-indent: -9999px;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+.nivo-directionNav .nivo-nextNav:hover {
+	right: 5px;
 }
 /* Ends Slider code */
 
@@ -827,8 +851,7 @@ input[type="button"] {
 	float: left;
 	margin: 25px 37px 25px 33px;
 }
-.footerWrap ul li a,
-.footerWrap p {
+.footerWrap ul li a {
 	color: #666666;
 	font-size: 13px;
 }
@@ -839,6 +862,8 @@ input[type="button"] {
 	line-height: 20px;
 	float: left;
 	margin: 25px 50px;
+	color: #fff;
+	font-size: 13px;
 }
 /* Ends Footer Code */
 .allowBullets {
