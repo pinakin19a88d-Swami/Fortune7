@@ -1,7 +1,9 @@
 #carousel {
 	position: relative;
 	width: 940px;
-	height: 434px;
+	/*height: 434px;*/
+	height: 300px;
+	overflow: hidden;
 	z-index: 200;
 }
 #carousel h1 {

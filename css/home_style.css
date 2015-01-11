@@ -220,7 +220,7 @@ ul {
 	list-style-type: none;
 }
 .redText {
-	color: #cc0000;
+	color: #cc0000!important;
 }
 .lightGreyText {
 	color: #666666;
@@ -392,7 +392,7 @@ ul {
 	left: 0;
 	list-style-type: none;
 	background-color: #ede7c3;
-	padding: 0 18px;
+	padding: 0 14px;
 }
 .subNavList li {
 	float: left;
@@ -400,7 +400,7 @@ ul {
 }
 .homeAjax li {
 	float: left;
-	padding: 16px 8px;
+	padding: 16px 3px;
 	color: #333333;
 	font-size: 11px;
 	line-height: 13px;
@@ -432,7 +432,7 @@ ul {
 	width: 2px;
 	height: 8px;
 	background: #767465;
-	margin: 2px 16px 2px 26px;
+	margin: 2px 10px 2px 16px;
 } 
 .subNavList > li > a:hover, 
 .subNavList > li.active > a {
