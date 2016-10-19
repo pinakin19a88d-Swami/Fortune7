@@ -773,11 +773,11 @@ background: url("../images/industry_bg.png") repeat-y;
 }
 .resumeWrap span{
 	display:block;
-	font-size: 13px;
+	/*font-size: 13px;*/
 	line-height: 15px;
 	color: #000;
 	margin-bottom: 25px;
-	margin-left: 25%;	
+	/*margin-left: 25%;	*/
 	/*text-align: center;*/
 }
 input[type="text"] {
